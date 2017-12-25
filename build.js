@@ -7,7 +7,7 @@ var fs = require('fs'),
   minify = require('uglify-es').minify;
 
 var production = !process.env.ROLLUP_WATCH;
-var utilsPath = path.resolve(__dirname, './src');
+var utilsPath = path.resolve(__dirname, './packages');
 var srcFiles = fs.readdirSync(utilsPath);
 var utils = []
 
@@ -19,7 +19,7 @@ srcFiles.forEach(function (filename) {
 
 utils.forEach(function (filename) {
   var inputOptions = {
-    input: `./src/${filename}`,
+    input: `./packages/${filename}`,
     plugins: [
       resolve(),
       babel({
