@@ -1,6 +1,6 @@
 {
-  "name": "my-utils",
-  "version": "1.0.0",
+  "name": "mintools",
+  "version": "1.0.1",
   "description": "Some commonly used methods",
   "main": "dist/index.js",
   "scripts": {
