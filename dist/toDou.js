@@ -1,1 +1,1 @@
-function toDou(o){return o<10?"0"+o:""+o}export default toDou;
+!function(e,o){"object"==typeof exports&&"undefined"!=typeof module?module.exports=o():"function"==typeof define&&define.amd?define(o):(e.toDou=e.toDou||{},e.toDou.js=o())}(this,function(){"use strict";return function(e){return e<10?"0"+e:""+e}});

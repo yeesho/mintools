@@ -17,7 +17,7 @@ You can use it in the following way:
   Mintools.method()
 ```
 
-Or in an environment that supports ES6:
+Or:
 
 ```
   import Method from 'mintools/method'
@@ -33,22 +33,23 @@ Or in an environment that supports ES6:
 - [query](./packages/query.js)
 - [validator](./packages/validator.js)
 - [dateFormat](./packages/dateFormat.js)
+- [toDecimal](./packages/toDecimal.js)
 
-### toDou
+#### toDou
 
 ```
   toDou(8) ------> '08'
-  toDou(16) -------> '16
+  toDou(16) -------> '16'
 ```
 
-### setTitle
+#### setTitle
 
 ```
   const title = 'test'
   setTitle(title)
 ```
 
-### cookie
+#### cookie
 
 ```
   const name = '_test'
@@ -60,7 +61,7 @@ Or in an environment that supports ES6:
   cookie.delCookie(name, domain)
 ```
 
-### query
+#### query
 
 ```
   window.location.href = 'https://www.google.com/search?biw=1680&bih=953&ei=X6dAWoLmKoOc8QXA2YiACg&q=js'
@@ -70,7 +71,7 @@ Or in an environment that supports ES6:
   query(['biw', 'bih']) ---> {biw: "1680", bih: "953"}
 ```
 
-### validator
+#### validator
 
 ```
   isEmail('21354825@qq.com') ---> true
@@ -78,12 +79,27 @@ Or in an environment that supports ES6:
   isCreditCard('qwerqwt25436') ---> false
 ```
 
-### dateFormat
+#### dateFormat
 
 ```
   const date = new Date()
   dateFormat(date) ---> '2018-01-10 11:58:29'
   dateFormat(date, 'yyyy年M月d日') ---> '2018年1月10日'
+```
+
+#### toDecimal
+
+```
+  toDecimal(2) ---> 2
+  toDecimal(2.2) ---> 2.2
+  toDecimal(2.22) ---> 2.22
+  toDecimal(2.222) ---> 2.22
+
+  toDecimal(2, 2) ---> 2.00
+  toDecimal(2.222, 2) ---> 2.22
+
+  toDecimal(2, 3) ---> 2.000
+  toDecimal(2.222222, 2) ---> 2.222
 ```
 
 ## License

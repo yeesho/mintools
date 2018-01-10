@@ -31,8 +31,9 @@ utils.forEach(function (filename) {
   var isMainJs = filename === 'main.js'
   var outputOptions = {
     file: isMainJs ? './dist/index.js' : `./dist/${filename}`,
-    format: isMainJs ? 'umd' : 'es',
-    name: isMainJs ? 'Utils' : ''
+    // format: isMainJs ? 'umd' : 'es',
+    format: 'umd',
+    name: isMainJs ? 'Utils' : filename
   };
 
   build(inputOptions, outputOptions);
