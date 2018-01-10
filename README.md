@@ -32,6 +32,59 @@ Or in an environment that supports ES6:
 - [cookie](./packages/cookie.js)
 - [query](./packages/query.js)
 - [validator](./packages/validator.js)
+- [dateFormat](./packages/dateFormat.js)
+
+### toDou
+
+```
+  toDou(8) ------> '08'
+  toDou(16) -------> '16
+```
+
+### setTitle
+
+```
+  const title = 'test'
+  setTitle(title)
+```
+
+### cookie
+
+```
+  const name = '_test'
+  const value = 'test'
+  const domain = '.domain'
+  
+  cookie.getCookie(name)
+  cookie.setCookie(name, value, domain)
+  cookie.delCookie(name, domain)
+```
+
+### query
+
+```
+  window.location.href = 'https://www.google.com/search?biw=1680&bih=953&ei=X6dAWoLmKoOc8QXA2YiACg&q=js'
+
+  query() ---> {biw: "1680", bih: "953", ei: "X6dAWoLmKoOc8QXA2YiACg", q: "js"}
+  query('biw') ---> "1680"
+  query(['biw', 'bih']) ---> {biw: "1680", bih: "953"}
+```
+
+### validator
+
+```
+  isEmail('21354825@qq.com') ---> true
+  isPhone('51536526232345') ---> false
+  isCreditCard('qwerqwt25436') ---> false
+```
+
+### dateFormat
+
+```
+  const date = new Date()
+  dateFormat(date) ---> '2018-01-10 11:58:29'
+  dateFormat(date, 'yyyy年M月d日') ---> '2018年1月10日'
+```
 
 ## License
 
