@@ -6,6 +6,7 @@ import validator from './validator';
 import dateFormat from './dateFormat';
 import toDecimal from './toDecimal';
 import getStyle from './getStyle';
+import rem2px from './rem2px';
 
 export default {
   toDou,
@@ -15,5 +16,6 @@ export default {
   validator,
   dateFormat,
   toDecimal,
-  getStyle
+  getStyle,
+  rem2px
 }

@@ -35,6 +35,7 @@ Or:
 - [dateFormat](./packages/dateFormat.js)
 - [toDecimal](./packages/toDecimal.js)
 - [getStyle](./packages/getStyle.js)
+- [rem2px](./packages/rem2px.js)
 
 #### toDou
 
@@ -107,6 +108,12 @@ Or:
 
 ```
   getStyle(ele, 'display') ---> 'block'
+```
+
+#### rem2px
+
+```
+  rem2px(24) ---> 12
 ```
 
 ## License
