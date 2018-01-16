@@ -34,6 +34,7 @@ Or:
 - [validator](./packages/validator.js)
 - [dateFormat](./packages/dateFormat.js)
 - [toDecimal](./packages/toDecimal.js)
+- [getStyle](./packages/getStyle.js)
 
 #### toDou
 
@@ -100,6 +101,12 @@ Or:
 
   toDecimal(2, 3) ---> 2.000
   toDecimal(2.222222, 2) ---> 2.222
+```
+
+#### getStyle
+
+```
+  getStyle(ele, 'display') ---> 'block'
 ```
 
 ## License

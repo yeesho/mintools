@@ -5,6 +5,7 @@ import query from './queryUrl';
 import validator from './validator';
 import dateFormat from './dateFormat';
 import toDecimal from './toDecimal';
+import getStyle from './getStyle';
 
 export default {
   toDou,
@@ -13,5 +14,6 @@ export default {
   query,
   validator,
   dateFormat,
-  toDecimal
+  toDecimal,
+  getStyle
 }

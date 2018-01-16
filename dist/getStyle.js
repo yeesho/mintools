@@ -1,0 +1,1 @@
+!function(e,t){"object"==typeof exports&&"undefined"!=typeof module?module.exports=t():"function"==typeof define&&define.amd?define(t):(e.getStyle=e.getStyle||{},e.getStyle.js=t())}(this,function(){"use strict";return function(e,t){return(e.currentStyle||window.getComputedStyle(e,!1))[t]}});
