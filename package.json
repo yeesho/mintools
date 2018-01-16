@@ -1,6 +1,6 @@
 {
   "name": "mintools",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Some commonly used methods",
   "main": "dist/index.js",
   "scripts": {
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/shaoyishou/my-utils.git"
+    "url": "git+https://github.com/shaoyishou/mintools.git"
   },
   "keywords": [
     "utils",
@@ -20,9 +20,9 @@
   "author": "shaoyishou@gmail.com",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/shaoyishou/my-utils/issues"
+    "url": "https://github.com/shaoyishou/mintools/issues"
   },
-  "homepage": "https://github.com/shaoyishou/my-utils#readme",
+  "homepage": "https://github.com/shaoyishou/mintools#readme",
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-plugin-external-helpers": "^6.22.0",
