@@ -1,6 +1,6 @@
 {
   "name": "mintools",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Some commonly used methods",
   "main": "dist/index.js",
   "scripts": {

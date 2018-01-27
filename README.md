@@ -36,6 +36,7 @@ Or:
 - [toDecimal](./packages/toDecimal.js)
 - [getStyle](./packages/getStyle.js)
 - [rem2px](./packages/rem2px.js)
+- [thousandBitSeparator](./packages/thousandBitSeparator.js)
 
 #### toDou
 
@@ -114,6 +115,16 @@ Or:
 
 ```
   rem2px(24) ---> 12
+```
+
+#### thousandBitSeparator
+
+```
+  thousandBitSeparator(10) ---> '10'
+  thousandBitSeparator(10532) ---> '10,532'
+  thousandBitSeparator(10532113432) ---> '10,532,113,432'
+  thousandBitSeparator(105.32) ---> '105.32'
+  thousandBitSeparator(112305.3342) ---> '112,305.3342'
 ```
 
 ## License

@@ -7,6 +7,7 @@ import dateFormat from './dateFormat';
 import toDecimal from './toDecimal';
 import getStyle from './getStyle';
 import rem2px from './rem2px';
+import thousandBitSeparator from 'thousandBitSeparator';
 
 export default {
   toDou,
@@ -17,5 +18,6 @@ export default {
   dateFormat,
   toDecimal,
   getStyle,
-  rem2px
+  rem2px,
+  thousandBitSeparator
 }
